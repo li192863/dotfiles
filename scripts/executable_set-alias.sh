@@ -5,12 +5,19 @@
 # Author: Chestnut
 
 # nvim
-alias vim='nvim'
 alias v='nvim'
 
+# cat
+alias c='cat'
+
 # conda
-alias c='conda'
 alias ca='conda activate'
 
 # echo
 alias e='echo'
+
+# python
+alias p='python'
+
+# tail
+alias tf='tail -f'

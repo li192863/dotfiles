@@ -10,9 +10,6 @@ map("n", ";", ":", { desc = "Enter command mode" })
 
 -- Tabs
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr><ESC>", { desc = "Save file" })
-map({ "n", "i", "v" }, "<C-w>", function()
-  require("nvchad.tabufline").close_buffer()
-end, { desc = "Close tab" })
 
 -- Line
 map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Swap line below" })

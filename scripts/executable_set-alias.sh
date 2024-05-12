@@ -1,15 +1,12 @@
 #!/bin/bash
 
 # Script Name: set-alias.sh
-# Description: Set alias in .rc files.
+# Description: Set alias.
+# Usage: source ~/scripts/set-alias.sh # .rc files
 # Author: Chestnut
-
-# nvim
-alias v='nvim'
 
 # cat
 alias c='cat'
-
 # conda
 alias ca='conda activate'
 
@@ -17,7 +14,13 @@ alias ca='conda activate'
 alias e='echo'
 
 # python
-alias p='python'
+alias p='ipython'
 
 # tail
 alias tf='tail -f'
+
+# nvim
+alias v='nvim'
+
+# workspace
+alias ws='tmux attach-session -t main'

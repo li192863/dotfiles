@@ -24,13 +24,13 @@ local options = {
 
   -- Customize formatters
   formatters = {
-    -- -- lua
-    -- stylua = {},
-    -- -- sh
-    -- shfmt = {
-    --   prepend_args = { "-i", "2" },
-    -- },
-    -- -- html, css, less, javascript, typescript
+    -- lua
+    stylua = {},
+    -- sh
+    shfmt = {
+      prepend_args = { "-i", "2" },
+    },
+    -- html, css, less, javascript, typescript
     -- prettier = {
     --   prepend_args = function(_, ctx)
     --     local ext = string.sub(ctx.filename, -3)
@@ -40,16 +40,17 @@ local options = {
     --       return {}
     --     end
     --   end,
-    -- }, -- c, cpp
-    -- ["clang-format"] = {
-    --   prepend_args = { "--style", "{BasedOnStyle: llvm, IndentWidth: 4}" },
     -- },
+    -- c, cpp
+    ["clang-format"] = {
+      prepend_args = { "--style", "{BasedOnStyle: google, IndentWidth: 2}" },
+    },
     -- -- java
     -- ["google-java-format"] = {
     --   prepend_args = { "--aosp" },
     -- },
-    -- -- python
-    -- yapf = {},
+    -- python
+    yapf = {},
   },
 }
 

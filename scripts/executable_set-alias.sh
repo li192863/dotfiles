@@ -5,8 +5,13 @@
 # Usage: source ~/scripts/set-alias.sh # .rc files
 # Author: Chestnut
 
+# apt
+alias au='sudo apt-get update'
+alias ai='sudo apt-get update && sudo apt-get install'
+
 # cat
 alias c='cat'
+
 # conda
 alias ca='conda activate'
 

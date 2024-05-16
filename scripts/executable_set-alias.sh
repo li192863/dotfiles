@@ -28,4 +28,4 @@ alias tf='tail -f'
 alias v='nvim'
 
 # workspace
-alias ws='tmux attach-session -t main'
+alias ws='tmux new-session -A -s main'

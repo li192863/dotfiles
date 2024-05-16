@@ -18,6 +18,7 @@ else
     tmux new-session -d -s main
   fi
   unset session_count
-  # Set alias
-  alias ws='tmux attach-session -t main'
 fi
+
+# Set alias
+alias ws='tmux new-session -A -s main'

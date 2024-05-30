@@ -28,6 +28,10 @@ alias nig='npm install -g'
 alias p='ipython'
 alias pi='pip install'
 
+# tar
+alias tc='tar czf'
+alias tx='tar xf'
+
 # tail
 alias tf='tail -f'
 

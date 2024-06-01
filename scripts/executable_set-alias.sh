@@ -14,18 +14,26 @@ alias c='cat'
 
 # conda
 alias ca='conda activate'
-alias ce='conda env list'
+alias ce='conda deactivate' # conda exit
+alias cel='conda env list'
 alias ci='conda install'
 
 # echo
 alias e='echo'
 
 # node
+alias nl='npm list'
+alias nlg='npm list -g'
 alias ni='npm install'
 alias nig='npm install -g'
 
-# python
+# ipython
 alias p='ipython'
+
+# python
+alias pa='python -m venv venv && . venv/bin/activate'
+alias pe='deactivate' # python-venv exit
+alias pl='pip list'
 alias pi='pip install'
 
 # tar

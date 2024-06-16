@@ -23,12 +23,10 @@ alias e='echo'
 
 # node
 alias nl='npm list'
-alias nlg='npm list -g'
 alias ni='npm install'
-alias nig='npm install -g'
 
 # ipython
-alias p='ipython'
+alias p='python'
 
 # python
 alias pa='python -m venv venv && . venv/bin/activate'
@@ -41,7 +39,7 @@ alias tc='tar czf'
 alias tx='tar xf'
 
 # tail
-alias tf='tail -f'
+alias t='tail'
 
 # nvim
 alias v='nvim'

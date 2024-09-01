@@ -10,6 +10,13 @@ if command -v nvim >/dev/null 2>&1; then
   export EDITOR='nvim'
 elif command -v vim >/dev/null 2>&1; then
   export EDITOR='vim'
+else
+  export EDITOR='vi'
+fi
+
+# ~/.local/bin
+if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+  export PATH="$HOME/.local/bin:$PATH"
 fi
 
 # CUDA https://developer.nvidia.com/cuda-toolkit
@@ -22,9 +29,9 @@ if [ -z "$CUDA_HOME" ]; then
 fi
 
 # Maven
-if [ -z "$MAVEN_HOME" ]; then
-  export MAVEN_HOME=$(find /home/chestnut/apps -maxdepth 1 -type d -name '*maven*' | head -n 1)
-  if [ -n "$MAVEN_HOME" ]; then
-    export PATH=${MAVEN_HOME}/bin:${PATH}
+if [ -z "$M2_HOME" ]; then
+  export M2_HOME=$(find $HOME/apps -maxdepth 1 -type d -name '*maven*' | head -n 1)
+  if [ -n "$M2_HOME" ]; then
+    export PATH=${M2_HOME}/bin:${PATH}
   fi
 fi

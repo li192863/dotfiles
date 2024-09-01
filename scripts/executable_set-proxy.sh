@@ -16,8 +16,10 @@ function proxy() {
     unset https_proxy
     unset all_proxy
     echo "Proxy disabled."
-  else
+  elif [ "$1" = "-h" ]; then
     echo "Usage: proxy on <address>:<port> | off"
+  else
+    env | grep -i --color=never "proxy"
   fi
 }
 

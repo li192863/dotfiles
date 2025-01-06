@@ -30,7 +30,7 @@ fi
 
 # Maven
 if [ -z "$M2_HOME" ]; then
-  export M2_HOME=$(find $HOME/apps -maxdepth 1 -type d -name '*maven*' | head -n 1)
+  export M2_HOME=$(find /opt -maxdepth 1 -type d -name '*maven*' | head -n 1)
   if [ -n "$M2_HOME" ]; then
     export PATH=${M2_HOME}/bin:${PATH}
   fi
